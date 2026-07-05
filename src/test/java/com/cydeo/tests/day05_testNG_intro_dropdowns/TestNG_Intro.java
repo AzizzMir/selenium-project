@@ -1,0 +1,50 @@
+package com.cydeo.tests.day05_testNG_intro_dropdowns;
+
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class TestNG_Intro {
+
+
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println("Before class is running...");
+    }
+
+    @BeforeMethod
+    public void setupMethod() {
+
+        System.out.println("Before method is running...");
+
+    }
+
+    @Test (priority = 2)
+    public void test1(){
+
+        System.out.println("Test 1 is running...");
+        Assert.assertEquals("apple", "apple");
+
+    }
+
+    @Test (priority = 1)
+    public void test2(){
+
+        System.out.println("Test 2 is running...");
+        String actual = "apple";
+        String expected = "Apple";
+        Assert.assertTrue(actual.equalsIgnoreCase(expected));
+
+    }
+
+    @AfterMethod
+    public void tearDownMethod() {
+        System.out.println("After method is running...");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println("After class is running...");
+    }
+
+
+}
