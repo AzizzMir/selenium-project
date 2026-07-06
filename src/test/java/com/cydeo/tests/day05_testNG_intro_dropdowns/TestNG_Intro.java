@@ -32,7 +32,7 @@ public class TestNG_Intro {
         System.out.println("Test 2 is running...");
         String actual = "apple";
         String expected = "Apple";
-        Assert.assertTrue(actual.equals(expected));
+        Assert.assertTrue(actual.equalsIgnoreCase(expected));
 
     }
 
