@@ -1,10 +1,8 @@
 package com.cydeo.tests.day06_alerts_iframes_windows;
 
 import com.cydeo.utilities.Driver;
-import io.cucumber.java.cs.Ale;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
